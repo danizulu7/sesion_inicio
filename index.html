@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <div class="left">
+        <h2>Se parte de nuestro equipo</h2>
+        <h2>Regístrate</h2>
+        <img src="./images/icon.png" alt="Cohete" />
+      </div>
+      <div class="right">
+        <nav class="nav">
+          <ul>
+            <a class="nav-a" href="index.html"
+              ><li class="nav-li left-li">Regístrate</li></a
+            >
+            <a class="nav-a" href="sesion.html"
+              ><li class="nav-li right-li">Inicia Sesión</li></a
+            >
+          </ul>
+        </nav>
+        <form
+          action="https://formspree.io/f/xjvljero"
+          method="post"
+          autocomplete="on"
+          id="post-form"
+        >
+          <label class="l-controls" for="">Nombre Completo</label>
+          <input
+            class="controls"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Ingresa tu Nombre"
+            required
+          />
+          <label class="l-controls" for="">Usuario</label>
+          <input
+            class="controls"
+            type="text"
+            name="user"
+            id="user"
+            placeholder="Ingresa tu Usuario"
+            required
+          />
+          <label class="l-controls" for="">Contraseña</label>
+          <input
+            class="controls"
+            type="password"
+            name="password"
+            placeholder="Ingresa tu Contraseña"
+            id="password"
+            required
+          />
+          <button type="button" id="changePassVisibilityBtn">👁</button>
+          <label class="l-controls" for="">Confirmar Contraseña</label>
+          <input
+            class="controls"
+            type="password"
+            name="repPassword"
+            placeholder="Confirma tu Contraseña"
+            id="password2"
+            required
+          />
+          <button type="button" id="changePassVisibilityBtn2">👁</button>
+          <p id="alert-pass"></p>
+          <label class="l-controls" for="">Email</label>
+          <input
+          class="controls"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Ingresa tu E-mail"
+          required
+          />
+
+          <p>
+            <input class="controls terms" type="checkbox" name="terms" required />Estoy
+            de acuerdo con los <a>Términos y Condiciones</a>
+          </p>
+          <input class="boton" type="submit" value="Regístrate" />
+          <p><a href="sesion.html">¿Ya tengo cuenta?</a></p>
+        </form>
+      </div>
+    </section>
+    <section class="container-success visibilityOff">
+      <div class="left">
+        <h2>Gracias por ser parte de nuestro equipo</h2>
+        <img src="./images/icon.png" alt="Cohete" />
+      </div>
+      <div class="right">
+        <h2>Tu registro ha sido exitoso</h2>
+        <p id="success"></p>
+      </div>
+    </section>
+    <script src="./js/mainIndex.js"></script>
+  </body>
+</html>

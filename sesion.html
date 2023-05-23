@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <div class="left">
+        <h2>Se parte de nuestro equipo</h2>
+        <h2>Inicia Sesión</h2>
+        <img src="./images/icon.png" alt="Cohete" />
+      </div>
+      <div class="right">
+        <nav class="nav">
+          <ul>
+            <a class="nav-a" href="index.html"
+              ><li class="nav-li left-li">Regístrate</li></a
+            >
+            <a class="nav-a" href="sesion.html"
+              ><li class="nav-li right-li">Inicia Sesión</li></a
+            >
+          </ul>
+        </nav>
+        <form
+          action="https://formspree.io/f/xjvljero"
+          method="post"
+          autocomplete="on"
+        >
+          <label class="l-controls" for="">Email</label>
+          <input
+            class="controls"
+            type="email"
+            name="email"
+            placeholder="Ingresa tu E-mail"
+            required
+          />
+          <label class="l-controls" for="">Contraseña</label>
+          <input
+            class="controls"
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Ingresa tu Contraseña"
+            required
+            />
+          <button type="button" id="changePassVisibilityBtn">👁</button>
+          <br>
+          <input class="boton" type="submit" value="Inicia Sesión" />
+          <p><a href="#">¿Olvidaste tu contraseña?</a></p>
+        </form>
+      </div>
+    </section>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

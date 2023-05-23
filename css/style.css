@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Diplomata+SC&family=Heebo:wght@200&family=Oswald:wght@200&display=swap");
+.left {
+  background-color: #d85b53;
+  color: #fff;
+  width: 600px;
+  text-align: center;
+  padding-top: 18px;
+  border-radius: 10px 0 0px 10px;
+}
+
+.left img {
+  width: 380px;
+}
+
+.right {
+  background-color: #14243c;
+  color: #fff;
+  width: 700px;
+  height: 592px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 28px;
+  border-radius: 0 10px 10px 0;
+}
+
+.right label {
+  display: block;
+}
+.container, .container-success {
+  display: flex;
+  margin: auto;
+  width: 1000px;
+  height: 630px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 14px 3px #888888;
+}
+
+.l-controls {
+  border: none;
+  font-family: "Heebo", sans-serif, "Diplomata SC";
+  font-weight: 900;
+  font-size: 18px;
+  margin-bottom: 3px;
+}
+
+.controls {
+  border-bottom: 2px solid #909dae;
+  background-color: #14243c;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  text-align: center;
+  margin-bottom: 9px;
+  color: #fff;
+  outline: none;
+  font-family: "Heebo", sans-serif, "Diplomata SC";
+}
+
+.container p {
+  text-align: center;
+  font-family: "Heebo", sans-serif, "Diplomata SC";
+  font-size: 14px;
+  margin-bottom: 0;
+  margin-top: 14px;
+}
+
+.terms {
+  margin-right: 17px;
+  margin-top: 20px;
+}
+
+.boton {
+  border-radius: 12px;
+  color: #fff;
+  border: none;
+  background: #d85b53;
+  width: 150px;
+  height: 31px;
+  margin-top: 28px;
+  font-family: "Heebo", sans-serif, "Diplomata SC";
+  font-weight: 900;
+  font-size: 20px;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+p a:hover {
+  text-decoration: underline;
+}
+
+.nav-li {
+  color: #fff;
+  display: inline;
+  border: 1px;
+  border-radius: 13px;
+  padding: 6px;
+}
+.nav ul {
+  padding-left: 300px;
+  margin-bottom: 55px;
+}
+
+.nav-a {
+  text-decoration: none;
+}
+
+.left-li {
+  background-color: #909dae;
+  font-family: "Heebo", sans-serif, "Diplomata SC";
+  font-size: 15px;
+}
+
+.right-li {
+  background-color: #d85b53;
+  font-family: "Heebo", sans-serif, "Diplomata SC";
+  font-size: 15px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s, color 5000s ease-out;
+}
+
+h2 {
+  font-family: "Heebo", sans-serif, "Diplomata SC";
+  font-size: 35px;
+  font-weight: 900;
+}
+
+#changePassVisibilityBtn, #changePassVisibilityBtn2 {
+  background-color: transparent;
+  color: #909dae;
+  border: none;
+  position: absolute;
+}
+
+#alert-pass {
+  text-align: center;
+    font-family: "Heebo", sans-serif, "Diplomata SC";
+    font-size: 14px;
+    margin: 11px 0;
+    color: #d85b53;
+    font-weight: bold;
+}
+
+.visibilityOff {
+  display: none;
+}
+
+#success {
+  text-align: center;
+  font-family: "Heebo", sans-serif, "Diplomata SC";
+  font-size: 14px;
+  margin: 100px 50px;
+}
