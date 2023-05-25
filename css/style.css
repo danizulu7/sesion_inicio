@@ -1,26 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Diplomata+SC&family=Heebo:wght@200&family=Oswald:wght@200&display=swap");
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .left {
   background-color: #d85b53;
   color: #fff;
-  width: 600px;
+  width: 40vw;
   text-align: center;
-  padding-top: 18px;
   border-radius: 10px 0 0px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .left img {
-  width: 380px;
+  width: 24vw;
 }
 
 .right {
   background-color: #14243c;
   color: #fff;
-  width: 700px;
-  height: 592px;
+  width: 40vw;
   text-align: center;
-  padding-top: 10px;
-  padding-bottom: 28px;
   border-radius: 0 10px 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .right label {
@@ -28,9 +41,9 @@
 }
 .container, .container-success {
   display: flex;
-  margin: auto;
-  width: 1000px;
-  height: 630px;
+  margin: 30px auto;
+  width: 80vw;
+  height: 80vh;
   border-radius: 10px;
   box-shadow: 0px 0px 14px 3px #888888;
 }
@@ -96,9 +109,10 @@ p a:hover {
   border-radius: 13px;
   padding: 6px;
 }
+
 .nav ul {
-  padding-left: 300px;
-  margin-bottom: 55px;
+  margin-right: 50px;
+  margin-bottom: 45px;
 }
 
 .nav-a {
@@ -115,6 +129,9 @@ p a:hover {
   background-color: #d85b53;
   font-family: "Heebo", sans-serif, "Diplomata SC";
   font-size: 15px;
+}
+.right nav {
+  align-self: flex-end;
 }
 
 input:-webkit-autofill,
@@ -155,4 +172,64 @@ h2 {
   font-family: "Heebo", sans-serif, "Diplomata SC";
   font-size: 14px;
   margin: 100px 50px;
+}
+@media (max-width: 1024px) {
+  .container, .container-success {
+    width: auto;
+    height: 60vh;
+  }
+
+  .left h2 {
+    padding: 0 3px;
+  }
+
+  .right {
+    padding: 0 0 75px;
+  }
+
+  .left, .right {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container, .container-success {
+    height: 75vh;
+    width: 94vw;
+  }
+
+  .left, .right {
+    width: 47vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .container, .container-success {
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+  }
+
+  .right {
+    padding-top: 50px;
+    border-radius: 0 0 10px 10px;
+  }
+
+.left {
+  padding-bottom: 60px;
+  border-radius: 10px 10px 0 0;
+}
+
+  .left, .right {
+    width: auto;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+@media (max-width: 375px) {
+  .nav ul {
+    margin-left: -38px;
+    margin-right: 0;
+  }
 }
